@@ -1,11 +1,8 @@
 /* eslint-disable no-unused-vars */
+import AddNewMeetup from "../components/meetups/NewMeetup"
 function NewMeetup(props) {
     return (
-        <div>
-            <h3>
-                New Meetup
-            </h3>
-        </div>
+        <AddNewMeetup />
     )
 }
 

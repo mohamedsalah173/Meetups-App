@@ -8,7 +8,6 @@ function AllMeetups(props) {
     const [fetchedData, setFetchedData] = useState([]);
 
     useEffect(()=>{
-
         fetch('https://meetups-project-9b0bd-default-rtdb.firebaseio.com/meetups.json')
             .then(response => response.json())
             .then(data => {
@@ -22,9 +21,7 @@ function AllMeetups(props) {
                     };
                     meetups.push(meetup);
                 }
-
                 setIsLoading(false)
-
                 setFetchedData(meetups)
             });
     },[]);
